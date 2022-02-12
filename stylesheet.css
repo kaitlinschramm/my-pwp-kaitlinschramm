@@ -23,15 +23,19 @@ h3 {
 }
 
 .beige {
-    background-color: #ca865d;
+    background-color: #9e6523;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: black;
-    background-color: yellow;
+    background-color: #fcdc68;
 }
 
 .nav-link:hover {
     color: saddlebrown;
+}
+
+body {
+    background-color: burlywood;
 }
 
