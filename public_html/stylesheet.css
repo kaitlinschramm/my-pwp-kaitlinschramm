@@ -1,0 +1,96 @@
+@font-face {
+    src: url(fonts/Romantiques.ttf);
+    font-family: Romantique;
+}
+@font-face {
+    src: url(fonts/Marlboro.ttf);
+    font-family: Marlboro
+}
+
+h1 {
+    font-family: Romantique;
+}
+
+h2 {
+    font-family: Romantique;
+}
+
+h3 {
+    font-family: Romantique;
+}
+
+.nav-link {
+    font-family: Marlboro;
+    font-size: x-large;
+    color: black;
+}
+
+p {
+    font-family: Marlboro;
+    font-size: x-large;
+}
+
+.beige {
+    background-color: #9e6523;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: black;
+    background-color: #fcdc68;
+}
+
+.nav-link:hover {
+    color: saddlebrown;
+}
+
+body {
+    background-color: burlywood;
+}
+
+.carousel {
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram {
+    color: darkmagenta;
+    transition: color 0.2s;
+    font-size: 40px;
+}
+
+.instagram:hover {
+    color: darkblue;
+}
+
+.github {
+    color: darkmagenta;
+    transition: color 0.2s;
+    font-size: 40px;
+}
+.github:hover {
+    color: darkblue;
+}
+
+.linkedin {
+    color:darkmagenta;
+    transition: 0.2s;
+    font-size: 40px;
+}
+
+.linkedin:hover {
+    color: darkblue;
+}
+
+.btn {
+    color: black;
+    background-color: #fcdc68;
+    font-family: Marlboro;
+    font-size: x-large;
+}
+
+.truck {
+    width: 32rem;
+    height: auto;
+}

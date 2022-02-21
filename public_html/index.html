@@ -13,10 +13,12 @@
     <title>Dog Door Art</title>
 </head>
 <body>
-<ul class="nav nav-pills mb-3 p-4 beige" id="pills-tab" role="tablist">
+<ul class="nav nav-pills mb-3 p-4 beige border border-dark border-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
     </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="false">About</button>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-art-tab" data-bs-toggle="pill" data-bs-target="#pills-art" type="button" role="tab" aria-controls="pills-art" aria-selected="false">Art</button>
     </li>
@@ -31,41 +33,61 @@
     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="container" id="homepage">
             <div class="row">
-                <div class="col-12 d-flex justify-content-center text-center">
-            <h2>Dog Door Art</h2>
+                <div class="col-12 d-flex justify-content-center text-center mt-3">
+            <h1>Kaitlin Marie Schramm</h1>
                 </div>
-                <div class="col-12 d-flex justify-content-center text-center">
-                    <h3>by Kaitlin Marie Schramm</h3>
+                <div class="col-12 d-flex justify-content-center text-center my-2">
+                    <h2>Artist<br>Silversmith<br>Web Developer</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-        <p>This is where my Artists statement and image will go</p>
+
+            <a class="instagram mx-2" href="https://www.instagram.com/dog__door/" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a class="github mx-2" href="https://github.com/kaitlinschramm" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+                    <a class="linkedin mx-2" href="https://www.linkedin.com/in/kaitlinmarieschramm/" target="_blank">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
                 </div>
             </div>
             <div id="carouselExampleControls" class="carousel slide my-3" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="Images/lennyotti.jpg" alt="First slide">
+                        <img class="d-block w-100 rounded-3 border border-dark border-3" src="Images/lennyotti.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="Images/farmpic.jpg" alt="Second slide">
+                        <img class="d-block w-100 rounded-3 border border-dark border-3" src="Images/farmpic.jpg" alt="Second slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="Images/dogs2.jpg" alt="Third slide">
+                        <img class="d-block w-100 rounded-3 border border-dark border-3" src="Images/dogs2.jpg" alt="Third slide">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <a class="carousel-control-prev" data-bs-target="#carouselExampleControls" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <a class="carousel-control-next" data-bs-target="#carouselExampleControls" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+
                 </a>
             </div>
         </div>
     </div>
+
+    <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="Images/truck.png" class="truck rounded-3 border border-dark border-3 my-3" alt="me">
+                </div>
+                </div>
+            </div>
+        </div>
+
 
 
     <div class="tab-pane fade" id="pills-art" role="tabpanel" aria-labelledby="pills-art-tab">
@@ -111,28 +133,34 @@
     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
         <div class="container mt-5">
             <h2>Contact Me</h2>
-            <form class="row g-3">
+            <form class="row g-3" id="contact" action="./apis/" method="post" novalidate>
                 <div class="col-md-6">
                     <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" required>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
                 </div>
                 <div class="col-md-6">
                     <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" required>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
                 </div>
                 <div class="col-md-8">
-                    <label for="emailInfo" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="emailInfo" required>
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="col-md-4">
                     <label for ="phoneNumber" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="phoneNumber">
+                    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
                 </div>
                 <div class="col-md-12">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6LeyxnoeAAAAAKjnoPLIXctVlfgwAVvPjeG_5fhe"></div>
+                <div class="col-auto">
+                    <button type="submit" class="btn">Submit</button>
                 </div>
             </form>
+
+            <div id="output-area"></div>
         </div>
 </div>
 </div>
@@ -145,8 +173,23 @@
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ="
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script src="js/script.js"></script>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 
 
 </body>
