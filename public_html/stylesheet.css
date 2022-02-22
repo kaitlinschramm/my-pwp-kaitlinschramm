@@ -94,3 +94,8 @@ body {
     width: 32rem;
     height: auto;
 }
+
+.contactfont {
+    font-family: Marlboro;
+    font-size: large;
+}
